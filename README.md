@@ -1,8 +1,12 @@
-# Komodo Travel — landing demo
+# Hatun Perú — landing demo
 
-Página de aterrizaje **estática** para una agencia de viajes ficticia inspirada en
-el mockup oscuro con acento dorado. Stack: HTML5 + CSS moderno + JS vanilla.
-Sin build step.
+Página de aterrizaje **estática** para una agencia ficticia de viajes de **lujo
+curado en Perú** (Belmond, Hiram Bingham, helicóptero a Machu Picchu, hoteles 5*
+en Cusco, Lima y Valle Sagrado). Hereda el mockup oscuro con acento dorado.
+Stack: HTML5 + CSS moderno + JS vanilla. Sin build step.
+
+> Slug y URL pública NO cambian — se conservan como `komodo-travel/` por compatibilidad
+> con el despliegue existente en GitHub Pages.
 
 ## Demo
 
