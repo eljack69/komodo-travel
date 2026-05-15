@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Komodo Travel — Viajes boutique a Indonesia y el sudeste asiático</title>
+  <meta name="description" content="Komodo Travel diseña experiencias premium en Bali, Java, Komodo y Tailandia: tours privados, vuelos, hoteles y trámites de visa en un solo lugar." />
+
+  <meta property="og:title" content="Komodo Travel — Viajes boutique al sudeste asiático" />
+  <meta property="og:description" content="Tours privados, vuelos, hoteles y visados. Diseñamos tu viaje a Indonesia y el sudeste asiático." />
+  <meta property="og:image" content="https://eljack69.github.io/komodo-travel/assets/img/og.jpg" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="canonical" href="https://eljack69.github.io/komodo-travel/" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital@1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="nav" id="nav">
+    <a class="nav__logo" href="#inicio">
+      <span class="nav__logo-text">Komodo</span>
+      <span class="nav__logo-script">Travel</span>
+    </a>
+    <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav__menu" id="menu" aria-label="Menú principal">
+      <a href="#inicio" class="nav__link is-active">Inicio</a>
+      <a href="#paquetes" class="nav__link">Paquetes</a>
+      <a href="#visa" class="nav__link">Pasaporte y visa</a>
+      <a href="#promo" class="nav__link">Promociones</a>
+      <a href="#galeria" class="nav__link">Galería</a>
+      <a href="#faq" class="nav__link">Preguntas</a>
+      <a href="#contacto" class="nav__link">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="hero__media" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1559628233-eb1bbc6e6cee?auto=format&fit=crop&w=2400&q=80" alt="" fetchpriority="high" />
+        <div class="hero__overlay"></div>
+      </div>
+      <div class="hero__content">
+        <p class="hero__eyebrow">Indonesia · Tailandia · Vietnam</p>
+        <h1 class="hero__title">Descubre el sudeste asiático <em>sin atajos</em>.</h1>
+        <p class="hero__lede">Itinerarios privados diseñados a medida: islas remotas, templos olvidados y la mejor logística boutique.</p>
+      </div>
+
+      <!-- BOOKING BAR -->
+      <form class="booking" id="booking" onsubmit="event.preventDefault(); alert('Demo: la búsqueda real requiere integración con un motor de reservas.');">
+        <div class="booking__field">
+          <label for="destino">Destinos</label>
+          <input id="destino" type="text" placeholder="País, ciudad, aeropuerto..." autocomplete="off" />
+        </div>
+        <div class="booking__field">
+          <label for="checkin">Fecha de entrada</label>
+          <input id="checkin" type="date" />
+        </div>
+        <div class="booking__field">
+          <label for="checkout">Fecha de salida</label>
+          <input id="checkout" type="date" />
+        </div>
+        <div class="booking__field">
+          <label for="huespedes">Huéspedes</label>
+          <select id="huespedes">
+            <option>1 viajero</option>
+            <option>2 viajeros</option>
+            <option>3 viajeros</option>
+            <option>4 o más</option>
+            <option>Grupo privado</option>
+          </select>
+        </div>
+        <button class="btn btn--primary booking__submit" type="submit">Reservar</button>
+      </form>
+    </section>
+
+    <!-- SERVICIOS 01-04 -->
+    <section class="services" aria-label="Servicios">
+      <div class="container">
+        <div class="services__grid">
+          <article class="service">
+            <span class="service__num">01</span>
+            <h3 class="service__title">Paquetes turísticos</h3>
+            <p>Itinerarios cerrados o totalmente a medida con guía privado, transporte y experiencias incluidas.</p>
+          </article>
+          <article class="service">
+            <span class="service__num">02</span>
+            <h3 class="service__title">Reserva de vuelos</h3>
+            <p>Tarifas multi-aerolínea con rutas internas optimizadas para que no pierdas días entre islas.</p>
+          </article>
+          <article class="service">
+            <span class="service__num">03</span>
+            <h3 class="service__title">Hoteles y resorts</h3>
+            <p>Alianzas con boutique-resorts de Bali, Java y Komodo. Habitaciones que normalmente no aparecen online.</p>
+          </article>
+          <article class="service">
+            <span class="service__num">04</span>
+            <h3 class="service__title">Destinos a medida</h3>
+            <p>¿Una isla sin nombre? La buscamos. Diseñamos tu mapa con coordenadas, permisos y logística.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT US -->
+    <section class="about" aria-label="Sobre nosotros">
+      <div class="container about__inner">
+        <figure class="about__media about__media--left">
+          <img src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?auto=format&fit=crop&w=900&q=80" alt="Calle tradicional al atardecer en Kioto, Japón" loading="lazy" />
+        </figure>
+
+        <div class="about__copy">
+          <h2 class="section-title">Sobre nosotros</h2>
+          <p>Komodo Travel es un estudio boutique de viajes con base en Lima y operación local en Bali, Bangkok y Hanói. Llevamos doce años diseñando itinerarios privados para viajeros que prefieren tiempo y autenticidad antes que el check-list turístico.</p>
+          <p>No vendemos paquetes en masa: estudiamos tu calendario, tu ritmo y tu apetito por la aventura, y devolvemos un viaje que sólo podría ser tuyo.</p>
+          <div class="about__actions">
+            <a href="#paquetes" class="btn btn--primary">Ver paquetes</a>
+            <a href="#valores" class="btn btn--ghost">¿Por qué nosotros?</a>
+          </div>
+        </div>
+
+        <figure class="about__media about__media--right">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80" alt="Bote tradicional al amanecer en una playa tropical" loading="lazy" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- TOUR PACKAGES -->
+    <section class="packages" id="paquetes" aria-label="Paquetes destacados">
+      <div class="container">
+        <h2 class="section-title">Paquetes destacados</h2>
+        <p class="section-sub">Selección curada de salidas para los próximos tres meses.</p>
+
+        <div class="packages__grid" id="packagesGrid">
+          <article class="card">
+            <div class="card__media"><img src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?auto=format&fit=crop&w=700&q=80" alt="Templo dorado de Bagan al amanecer" loading="lazy" /></div>
+            <div class="card__body">
+              <h3 class="card__title">Bagan — Myanmar</h3>
+              <p class="card__meta">7 días · grupo reducido</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__media"><img src="https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=700&q=80" alt="Wat Arun iluminado al atardecer en Bangkok" loading="lazy" /></div>
+            <div class="card__body">
+              <h3 class="card__title">Bangkok — Tailandia</h3>
+              <p class="card__meta">5 días · privado</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__media"><img src="https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=700&q=80" alt="Singapore Flyer al anochecer" loading="lazy" /></div>
+            <div class="card__body">
+              <h3 class="card__title">Singapur</h3>
+              <p class="card__meta">4 días · familias</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__media"><img src="https://images.unsplash.com/photo-1538964173425-93884d739596?auto=format&fit=crop&w=700&q=80" alt="Arquitectura moderna de Singapur al anochecer" loading="lazy" /></div>
+            <div class="card__body">
+              <h3 class="card__title">Marina Bay — Singapur</h3>
+              <p class="card__meta">3 días · escapada</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="packages__dots" role="tablist" aria-label="Página de paquetes">
+          <button class="dot is-active" aria-label="Página 1" data-page="1"></button>
+          <button class="dot" aria-label="Página 2" data-page="2"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- BANNER PROMO -->
+    <section class="promo" id="promo" aria-label="Promoción destacada">
+      <div class="container">
+        <a class="promo__banner" href="#contacto">
+          <img src="https://images.unsplash.com/photo-1551918120-9739cb430c6d?auto=format&fit=crop&w=1800&q=80" alt="Parque temático iluminado de noche" loading="lazy" />
+          <div class="promo__overlay">
+            <p class="promo__eyebrow">Promoción de temporada</p>
+            <h3 class="promo__title">Universal Studios Singapore<br/>desde USD 89 por persona</h3>
+            <span class="btn btn--primary btn--sm">Ver detalles</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section class="testimony" aria-label="Testimonios">
+      <div class="container testimony__inner">
+        <h2 class="section-title testimony__title">Testimonios</h2>
+        <p class="section-sub">Viajeros felices y lo que cuentan al volver.</p>
+
+        <div class="testimony__quote" id="testimonyQuote">
+          <span class="testimony__mark" aria-hidden="true">&ldquo;</span>
+          <blockquote>
+            <p id="testimonyText">El itinerario en Bali superó cualquier expectativa: cada chofer, cada villa, cada cena privada estaba pensada al detalle. Volveremos sí o sí.</p>
+            <footer>— <cite id="testimonyName">Febrián</cite></footer>
+          </blockquote>
+          <span class="testimony__mark testimony__mark--end" aria-hidden="true">&rdquo;</span>
+        </div>
+
+        <div class="testimony__avatars" role="tablist" aria-label="Cambiar testimonio">
+          <button class="avatar is-active" data-index="0" aria-label="Testimonio de Febrián">
+            <img src="https://i.pravatar.cc/120?img=12" alt="" />
+          </button>
+          <button class="avatar" data-index="1" aria-label="Testimonio de Mariana">
+            <img src="https://i.pravatar.cc/120?img=45" alt="" />
+          </button>
+          <button class="avatar" data-index="2" aria-label="Testimonio de Andrés">
+            <img src="https://i.pravatar.cc/120?img=33" alt="" />
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERIA -->
+    <section class="gallery" id="galeria" aria-label="Galería">
+      <ul class="gallery__strip" role="list">
+        <li><img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=500&q=80" alt="Arco de piedra en una ciudad europea" loading="lazy" /></li>
+        <li><img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=500&q=80" alt="Autobús londinense en la calle" loading="lazy" /></li>
+        <li><img src="https://images.unsplash.com/photo-1493558103817-58b2924bce98?auto=format&fit=crop&w=500&q=80" alt="Silueta en un túnel iluminado" loading="lazy" /></li>
+        <li><img src="https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?auto=format&fit=crop&w=500&q=80" alt="Persona caminando hacia el mar al atardecer" loading="lazy" /></li>
+        <li><img src="https://images.unsplash.com/photo-1502786129293-79981df4e689?auto=format&fit=crop&w=500&q=80" alt="Hoguera en un campamento al aire libre" loading="lazy" /></li>
+        <li><img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=500&q=80" alt="Camino de madera en un bosque" loading="lazy" /></li>
+        <li><img src="https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=500&q=80" alt="Persona caminando por una calle tradicional" loading="lazy" /></li>
+        <li><img src="https://images.unsplash.com/photo-1505765050516-f72dcac9c60e?auto=format&fit=crop&w=500&q=80" alt="Cabaña de madera al amanecer" loading="lazy" /></li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="contacto">
+    <div class="container footer__inner">
+      <div class="footer__col">
+        <h4 class="footer__title">¿Necesitas ayuda?</h4>
+        <p class="footer__row"><span class="footer__ico" aria-hidden="true">◐</span> Av. Brigend, Sucursal 1234 — Lima, Perú</p>
+        <p class="footer__row"><span class="footer__ico" aria-hidden="true">☎</span> +51 994 567 890</p>
+        <p class="footer__row"><span class="footer__ico" aria-hidden="true">✉</span> hola@komodotravel.demo</p>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__title">Sobre</h4>
+        <ul>
+          <li><a href="#inicio">Quiénes somos</a></li>
+          <li><a href="#faq">Preguntas frecuentes</a></li>
+          <li><a href="#contacto">Acceso clientes</a></li>
+          <li><a href="#contacto">Registro</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__title">Descubre</h4>
+        <ul>
+          <li><a href="#paquetes">Blog de comunidad</a></li>
+          <li><a href="#paquetes">Guías de viaje</a></li>
+          <li><a href="#paquetes">Lista de deseos</a></li>
+          <li><a href="#paquetes">Inspiración</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__title">Redes sociales</h4>
+        <a class="footer__social" href="#"><span aria-hidden="true">▣</span> Instagram · @komodotravel</a>
+        <a class="footer__social" href="#"><span aria-hidden="true">✕</span> X · @komodotravel</a>
+        <a class="footer__social" href="#"><span aria-hidden="true">f</span> Facebook · /komodotravel</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <small>© <span id="year"></span> Komodo Travel — Demostración estática. Todas las marcas mostradas son ficticias o referenciales.</small>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
